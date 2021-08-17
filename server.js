@@ -9,6 +9,11 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
+app.get('/hello', function(req, res) {
+    res.send("Selamlar");
+});
+
+
 var server = app.listen(8081, function () {
    var host = server.address().address
    var port = server.address().port
